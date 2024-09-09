@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="todo-container">
+        <header>
+            <h1>My Day</h1>
+            <div>
+                <button id="add-category-btn">Add Category</button>
+                <button id="sort-date-btn">Sort by Date</button>
+                <button id="sort-priority-btn">Sort by Priority</button>
+                <button id="toggle-view-btn">Toggle View</button>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </header>
+
+        <div class="input-container">
+            <input type="text" id="todo-input" placeholder="Add a new task">
+            <input type="date" id="due-date">
+            <button id="add-btn">Add</button>
+        </div>
+        <div id="categories">
+            <!-- Categories will be dynamically added here -->
+        </div>
+        <ul id="todo-list" class="list-view"></ul>
+
+        <h2>Completed Tasks</h2>
+        <button id="toggle-completed-btn">Show Completed Tasks</button>
+        <div id="completed-tasks-container" style="display: none;">
+            <ul id="completed-tasks" class="list-view"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
